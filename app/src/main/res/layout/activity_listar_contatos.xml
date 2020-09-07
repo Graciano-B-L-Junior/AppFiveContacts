@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="top"
+    tools:context=".listar_contatos">
+
+    <ListView
+        android:id="@+id/teste"
+        android:layout_width="wrap_content"
+        android:layout_height="450dp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="603dp"
+        android:background="#CC0000"
+        app:itemBackground="@android:color/holo_red_dark"
+        app:itemIconTint="@color/design_default_color_background"
+        app:itemTextColor="#FFFFFF">
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="42dp"
+            android:layout_height="37dp"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/ic_baseline_person_24"
+            android:backgroundTint="#FFFFFF"
+            android:onClick="voltarListaAgenda" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="225dp"
+            android:layout_marginTop="30dp"
+            android:text="Adicionar Contato"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="42dp"
+            android:layout_height="37dp"
+            android:background="@drawable/ic_baseline_person_24"
+            android:backgroundTint="#FFFFFF"
+            android:onClick="alterarDados"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="60dp"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alterar Usuário"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="35dp"/>
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</RelativeLayout>
